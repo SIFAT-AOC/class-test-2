@@ -194,3 +194,17 @@ marquee p {
 }
 
 /*  review section  */
+
+/*  video section  */
+
+.video {
+  padding: 5rem 0;
+  background-color: rgb(226 245 251);
+}
+
+.video .video-content {
+  width: 400px;
+  margin: 0 auto;
+}
+
+/* video section */
