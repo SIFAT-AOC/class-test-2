@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Russo+One&display=swap");
+
+:root {
+  --primary: #efa136;
+  --secondary: rgb(239 65 54);
+  --formal: #ffffff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  opacity: 0;
+  transition: opacity 3s;
+}
+/* utility class */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.align-center {
+  align-items: center;
+}
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.btn {
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 10px 29px;
+  font-size: var(--peragraph-size1);
+  font-weight: 400;
+  border-radius: 30px;
+  display: block;
+  border: 1px solid var(--secondary-color);
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  background-color: transparent;
+  color: var(--secondary-color);
+}
+/* utility class */
+
+/* nav bar  */
+.logo {
+  flex-basis: 20%;
+  max-width: 20%;
+}
+.logo img {
+  max-width: 100%;
+  height: 166px;
+}
+nav .cart {
+  flex-basis: 76%;
+  justify-content: flex-end;
+  max-width: 76%;
+}
+.nav-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 30px;
+}
+.nav-icon span {
+  margin-top: 7px;
+  font-weight: 500;
+}
+.uniq-btn {
+  color: var(--formal);
+  background-color: var(--primary);
+  text-decoration: none;
+  padding: 14px 20px;
+  font-size: 20px;
+  font-weight: 800;
+  box-shadow: 6px 11px 20px 1px rgb(0 0 0 / 46%);
+  border: 1px solid var(--primary);
+}
+.uniq-btn:hover {
+  background-color: transparent;
+  color: var(--primary);
+}
+nav .cart .nav-icon svg {
+  fill: var(--third-color);
+  transition: all 0.3s ease-in;
+  width: 2rem;
+  cursor: pointer;
+}
+nav .cart .nav-icon svg:hover,
+nav .cart .nav-icon span:hover {
+  fill: var(--primary);
+  color: var(--primary);
+}
+
+/* nav bar  */
