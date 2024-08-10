@@ -105,7 +105,16 @@ nav .cart .nav-icon span:hover {
 }
 
 /* nav bar  */
-
+/* announce bar */
+marquee {
+  padding: 20px;
+  background-color: #dfa155;
+  color: var(--formal);
+}
+marquee p {
+  text-align: center;
+}
+/* announce bar */
 /*  feature section 1  */
 
 .f-s-1 {
@@ -148,6 +157,40 @@ nav .cart .nav-icon span:hover {
 }
 .f-s-1-img img {
   width: 100%;
+  display: block;
 }
 
 /*  feature section 1  */
+
+/*  review section  */
+
+.review-container {
+  background-color: #333;
+  color: var(--formal);
+  padding: 3rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.review-content {
+  max-width: 60%;
+}
+.review-content p {
+  text-align: center;
+  font-size: 27px;
+  font-weight: 800;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+.review-star {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  align-items: center;
+}
+.review-container .review-content .review-star img {
+  height: 16px;
+  margin-right: 35px;
+}
+
+/*  review section  */
